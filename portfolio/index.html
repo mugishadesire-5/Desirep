@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUGISHA Desire| Junior Frontend Developer</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <nav class="container">
+        <div class="logo">Desire</div>
+
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#calculator">Tool</a></li>
+            <li><a href="#cv">CV</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <div class="container hero-content">
+        <h1>Hi, I'm MUGISHA DESIRE</h1>
+        <p>Junior Frontend Developer building digital solutions for Rwanda’s future.</p>
+
+        <div class="hero-buttons">
+            <button class="cta-btn" onclick="document.getElementById('projects').scrollIntoView()">
+                View My Work
+            </button>
+
+            <a href="assets/cv/CV_Portfolio.pdf" download class="secondary-btn">
+                Download CV
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="container">
+    <div class="about-grid">
+
+        <div class="about-text">
+            <h2>Professional Profile</h2>
+            <p>
+                I am a Year II Computer Science student and Junior Frontend Developer passionate about
+                building scalable, user-centered applications.
+            </p>
+            <p>
+                My focus is on modern web technologies, responsive design,
+                and contributing to Rwanda’s digital transformation.
+            </p>
+        </div>
+
+        <div class="about-visual">
+            <img src="D:\portfolio\assets\images\Desir.png"
+                 alt="MUGISHA Desire Profile Picture"
+                 class="profile-image">
+        </div>
+
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="container">
+    <h2>Technical Skills</h2>
+    <div class="skills-list">
+        <span class="skill-tag">HTML5</span>
+        <span class="skill-tag">CSS3</span>
+        <span class="skill-tag">JavaScript (ES6+)</span>
+        <span class="skill-tag">Bootstrap</span>
+        <span class="skill-tag">Git & GitHub</span>
+        <span class="skill-tag">Responsive Design</span>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="container">
+    <h2>Featured Projects</h2>
+
+    <div class="projects-grid">
+
+        <article class="project-card">
+            <div class="project-icon">🍎</div>
+            <div class="project-info">
+                <h3>FreshScan AI</h3>
+                <p>AI-powered computer vision system for agricultural quality analysis.</p>
+                <p><strong>Tech:</strong> Python, TensorFlow, OpenCV</p>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <div class="project-icon">🥗</div>
+            <div class="project-info">
+                <h3>NutriTrack Pro</h3>
+                <p>Smart health ecosystem for personalized nutrition management.</p>
+                <p><strong>Tech:</strong> React, Node.js</p>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <div class="project-icon">🏠</div>
+            <div class="project-info">
+                <h3>Home Harmony Hub</h3>
+                <p>IoT-based smart home automation platform.</p>
+                <p><strong>Tech:</strong> Kotlin, Firebase</p>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<!-- CALCULATOR -->
+<section id="calculator" class="calculator-section">
+    <div class="container">
+        <h2>Musanze Transport Fare Estimator</h2>
+
+        <div class="calc-card">
+
+            <div class="form-group">
+                <label>Distance (km)</label>
+                <input type="number" id="distance" min="0">
+            </div>
+
+            <button class="cta-btn" id="calculateFare">Estimate Fare</button>
+
+            <div class="form-group">
+                <label>Calculated Fare (RWF)</label>
+                <input type="text" id="fare" readonly>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CV -->
+<section id="cv" class="container">
+    <h2>Professional CV</h2>
+
+    <div class="cv-card">
+
+        <div class="cv-header">
+            <h3>MUGISHA Desire</h3>
+            <p>Junior Software Developer | Computer Science Student</p>
+            <p>Musanze, Rwanda</p>
+        </div>
+
+        <div class="cv-body">
+
+            <div>
+                <h4>Education</h4>
+                <p>Bachelor of Computer Science – Year II</p>
+
+                <h4>Skills</h4>
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>Java Programming</li>
+                    <li>Android Development</li>
+                    <li>Git Version Control</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Projects</h4>
+                <p><strong>FreshScan AI</strong> – AI produce grading system</p>
+                <p><strong>NutriTrack Pro</strong> – Health management system</p>
+                <p><strong>Home Harmony Hub</strong> – IoT smart home platform</p>
+
+                <h4>Career Objective</h4>
+                <p>
+                    To leverage modern web technologies to build impactful
+                    digital solutions in Rwanda and beyond.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <a href="assets/cv/CV_Portfolio.pdf" download class="cta-btn">
+        Download Full CV (PDF)
+    </a>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="container">
+    <h2>Get In Touch</h2>
+
+    <div class="contact-wrapper">
+
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit" class="cta-btn">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+            <p><strong>Email:</strong> mugishadesire7@gmail.com</p>
+            <p><strong>Phone:</strong> +250 784017339</p>
+            <p><strong>Location:</strong> Musanze, Rwanda</p>
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+    <p>© 2026 MUGISHA Desire | All Rights Reserved</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
